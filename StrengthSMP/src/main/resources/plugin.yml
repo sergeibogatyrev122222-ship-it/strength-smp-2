@@ -1,0 +1,19 @@
+name: StrengthSMP
+version: 1.0.0
+main: com.strengthsmp.StrengthSMP
+api-version: '1.21'
+description: Kill players to receive a Strength shell. Right-click to consume it. Lose 1 strength on death.
+authors: [StrengthSMP]
+
+commands:
+  strength:
+    description: Check, withdraw, or reset strength
+    usage: |
+      /strength - Check your current strength
+      /strength withdraw <amount> - Remove strength levels
+      /strength reset <player> - (Admin) Reset a player's strength to 0
+
+permissions:
+  strengthsmp.admin:
+    description: Allows use of /strength reset
+    default: op
